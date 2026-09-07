@@ -1,0 +1,239 @@
+---
+layout: null
+permalink: /
+title: "Syrine Kalleli"
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.author.name }}</title>
+<meta name="description" content="{{ site.description }}">
+<link rel="icon" href="data:,">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #e4e2dd;
+    --bg: #fbfaf8;
+    --accent: #8a3324;
+    --max: 760px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  main {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 6rem;
+    overflow-x: hidden;
+  }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(138,51,36,0.35); }
+  a:hover { border-bottom-color: var(--accent); }
+  .intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.25rem;
+    margin-bottom: 3rem;
+  }
+  .intro .portrait {
+    width: 280px;
+    height: 280px;
+    border-radius: 18px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 1px var(--line);
+  }
+  .intro-text {
+    min-width: 0;
+    padding-top: 0.5rem;
+  }
+  h1, .role, .greeting, .bio, .entry .title, .entry .meta, .entry .authors {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 0 0 0.2rem;
+    letter-spacing: -0.01em;
+  }
+  .pronouns {
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: 400;
+  }
+  .role {
+    color: var(--muted);
+    font-size: 1rem;
+    margin: 0 0 1.25rem;
+  }
+  .greeting {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+  }
+  .bio {
+    margin: 0 0 1.25rem;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+  .links a { color: var(--ink); border-bottom-color: var(--line); }
+  .links a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .links .email { color: var(--ink); }
+  h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.5rem;
+    margin: 2.75rem 0 1.25rem;
+  }
+  .entry {
+    display: grid;
+    grid-template-columns: 3.2rem minmax(0, 1fr);
+    gap: 0 1rem;
+    margin-bottom: 1.35rem;
+  }
+  .entry.has-thumb {
+    grid-template-columns: 168px minmax(0, 1fr);
+    align-items: center;
+    gap: 0 1.25rem;
+    margin-bottom: 1.75rem;
+  }
+  .entry .thumb {
+    width: 168px;
+    height: 88px;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px var(--line);
+    background: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    display: block;
+  }
+  .entry .year {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    padding-top: 0.2rem;
+  }
+  .entry.has-thumb .year {
+    padding-top: 0;
+  }
+  .entry .title {
+    font-weight: 600;
+    display: block;
+  }
+  .entry .meta {
+    color: var(--muted);
+    font-size: 0.92rem;
+    display: block;
+    margin-top: 0.15rem;
+  }
+  .entry .meta a { color: var(--muted); }
+  .entry .authors {
+    color: var(--muted);
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 0.3rem;
+  }
+  .entry .authors strong { color: var(--ink); font-weight: 700; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  @media (max-width: 600px) {
+    .intro { flex-direction: column; gap: 1.25rem; }
+    .intro .portrait { width: 100%; height: auto; aspect-ratio: 1 / 1; max-width: 320px; }
+    .intro-text { padding-top: 0; }
+    .entry { grid-template-columns: 1fr; }
+    .entry .year { padding-top: 0; }
+    .entry.has-thumb { grid-template-columns: 1fr; }
+    .entry.has-thumb .thumb { width: 100%; height: auto; max-height: 160px; margin-bottom: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="intro">
+    <img class="portrait" src="{{ '/images/' | append: site.author.avatar | relative_url }}" alt="{{ site.author.name }}">
+    <div class="intro-text">
+      <h1>{{ site.author.name }}</h1>
+      <p class="role">PhD Student &middot; {{ site.author.employer }}, {{ site.author.location }}</p>
+
+      <p class="greeting">Hi there! 👋</p>
+      <p class="bio">I'm a 3rd year PhD student at ENPC, IP Paris, advised by <a href="http://imagine.enpc.fr/~aubrym/">Mathieu Aubry</a>. I work on learning by decomposing images into simple, interpretable representations. I am in ongoing collaboration with <a href="https://people.eecs.berkeley.edu/~efros/">Alexei Efros</a> (UC Berkeley).</p>
+
+      <div class="links">
+        <span class="email">syrine dot kalleli at enpc dot fr</span>
+        {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar</a>{% endif %}
+        {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub</a>{% endif %}
+        {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
+      </div>
+    </div>
+  </div>
+
+  <h2>Publications</h2>
+  {% for post in site.publications reversed %}
+  <div class="entry{% if post.thumb %} has-thumb{% endif %}">
+    {% if post.thumb %}
+      <a href="{{ post.link | default: post.url | relative_url }}"><img class="thumb" src="{{ post.thumb | relative_url }}" alt=""></a>
+    {% else %}
+      <span class="year">{{ post.date | date: "%Y" }}</span>
+    {% endif %}
+    <div>
+      {% if post.thumb %}<span class="year">{{ post.date | date: "%Y" }}</span>{% endif %}
+      {% if post.link %}
+        <a class="title" href="{{ post.link }}">{{ post.title }}</a>
+      {% else %}
+        <a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% endif %}
+      <span class="meta">{{ post.venue }}</span>
+      {% if post.authors %}<span class="authors">{{ post.authors }}</span>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <h2>Teaching</h2>
+  {% for post in site.teaching reversed %}
+  <div class="entry">
+    <span class="year">{{ post.date | date: "%Y" }}</span>
+    <div>
+      <span class="title">{{ post.title }}</span>
+      <span class="meta">{{ post.type }}, {{ post.venue }}</span>
+    </div>
+  </div>
+  {% endfor %}
+
+  <footer>
+    &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. Also available as a <a href="{{ '/full/' | relative_url }}">multi-page site</a>.
+  </footer>
+
+</main>
+</body>
+</html>
