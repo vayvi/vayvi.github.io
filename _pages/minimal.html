@@ -222,7 +222,7 @@ title: "Syrine Kalleli"
       <p class="role">PhD Student &middot; {{ site.author.employer }}, {{ site.author.location }}</p>
 
       <p class="greeting">Hi there! 👋</p>
-      <p class="bio">I'm a 3rd year computer vision PhD student at ENPC, IP Paris, advised by <a href="http://imagine.enpc.fr/~aubrym/">Mathieu Aubry</a>. I work on learning by decomposing images into simple, interpretable representations. I am in ongoing collaboration with <a href="https://people.eecs.berkeley.edu/~efros/">Alexei Efros</a> (UC Berkeley). Before my PhD, I completed the M2 MVA (Math&eacute;matiques / Vision / Apprentissage) at ENS Paris-Saclay, as part of the Mathematics department (Normalienne &eacute;l&egrave;ve).</p>
+      <p class="bio">I'm a 3rd year computer vision PhD student at ENPC, IP Paris, advised by <a href="http://imagine.enpc.fr/~aubrym/">Mathieu Aubry</a>. I work on learning by decomposing images into simple, interpretable representations. I am in ongoing collaboration with <a href="https://people.eecs.berkeley.edu/~efros/">Alexei Efros</a> (UC Berkeley). Before my PhD, I completed the MVA masters at ENS Paris-Saclay, where I was also Normalienne &eacute;l&egrave;ve in the mathematics department.</p>
 
       <div class="links">
         <span class="email">syrine dot kalleli at enpc dot fr</span>
@@ -235,14 +235,14 @@ title: "Syrine Kalleli"
 
   <h2>Publications</h2>
   {% for post in site.publications reversed %}
-  <div class="entry{% if post.thumb %} has-thumb{% endif %}">
+  <div class="entry has-thumb">
     {% if post.thumb %}
       <a href="{{ post.link | default: post.url | relative_url }}"><img class="thumb" src="{{ post.thumb | relative_url }}" alt=""></a>
     {% else %}
-      <span class="year">{{ post.date | date: "%Y" }}</span>
+      <span></span>
     {% endif %}
     <div>
-      {% if post.thumb %}<span class="year">{{ post.date | date: "%Y" }}</span>{% endif %}
+      <span class="year">{{ post.date | date: "%Y" }}</span>
       {% if post.link %}
         <a class="title" href="{{ post.link }}">{{ post.title }}</a>
       {% else %}
