@@ -11,7 +11,7 @@ locale                   : "fr-FR"
 title                    : "Syrine Kalleli"
 title_separator          : "-"
 name                     : &name "Syrine Kalleli"
-description              : &description "PhD student at ENPC working on interpretable computer vision"
+description              : &description "Syrine Kalleli - PhD student in computer vision at ENPC, IP Paris, working on interpretable image decomposition"
 url                      : https://vayvi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "vayvi/vayvi.github.io"
@@ -182,6 +182,24 @@ exclude:
   - README
   - tmp
   - vendor
+  # Old multi-page AcademicPages template - kept in the repo but not built/published
+  - _pages/about.md
+  - _pages/cv.md
+  - _pages/publications.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/portfolio.html
+  - _pages/year-archive.html
+  - _pages/markdown.md
+  - _pages/talkmap.html
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/sitemap.md
+  - _pages/tag-archive.html
+  - _pages/terms.md
 keep_files:
   - .git
   - .svn
