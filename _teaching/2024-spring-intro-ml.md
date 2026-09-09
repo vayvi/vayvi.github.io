@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Machine Learning"
 collection: teaching
-type: "Course, Teaching Assistant"
+type: "Teaching Assistant"
 permalink: /teaching/2024-spring-intro-ml
 venue: "ENPC"
 date: 2024-03-01

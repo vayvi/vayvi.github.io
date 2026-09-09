@@ -1,7 +1,7 @@
 ---
 title: "Deep Learning"
 collection: teaching
-type: "Course, Teaching Assistant"
+type: "Teaching Assistant"
 permalink: /teaching/2025-fall-deep-learning
 venue: "ENPC"
 date: 2025-09-01
